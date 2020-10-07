@@ -1,0 +1,15 @@
+﻿@model StudentDetailsModel.Models.Student
+
+<h2>Student Details</h2>
+
+Id: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="@Model.Id" /><br /><br/>
+Name: &nbsp;&nbsp;<input type="text" value="@Model.Name" /><br /><br />
+Email: &nbsp;&nbsp;&nbsp;<input type="text" value="@Model.Email" /><br /><br />
+Mobile: &nbsp;<input type="text" value="@Model.Mobile" />
+<div>
+    @Html.ActionLink("View Student List", "StudentList", "Student", new { @class = "btn btn-Primary" })
+</div>
+
+     
+
+
